@@ -5,6 +5,9 @@ import java.util.Map;
 public class _2_ValidAnagram {
 
     public static boolean isAnagram(String s, String t) {
+        if (s.length()!=t.length())
+            return false;
+
         char[] sCArray = s.toCharArray();
         char[] tCArray = t.toCharArray();
 
@@ -16,20 +19,30 @@ public class _2_ValidAnagram {
 
     // no sorting
     public static boolean isAnagramV2 (String s, String t) {
-        Map<Character, Integer> anagramMap = new HashMap<>();
+        if (s.length() != t.length())
+            return false;
 
-        for (char c : s.toCharArray()) {
-            if (anagramMap.containsKey(c))
-                anagramMap.put(c, anagramMap.get(c)+1);
-            else
-                anagramMap.put(c, 1);
-        }
+        Map<Character, Integer> sourceMap = new HashMap<>();
+        buildMap (s, sourceMap);
 
-        for (char c : t.toCharArray()) {
+        Map<Character, Integer> targetMap = new HashMap<>();
+        buildMap(t, targetMap);
 
+        for (char c : targetMap.keySet()) {
+            if (!sourceMap.containsKey(c) || ((int) sourceMap.get(c) != (int) targetMap.get(c)))
+                return false;
         }
 
         return true;
+    }
+
+    private static void buildMap (String s, Map<Character, Integer> map) {
+        for (char c : s.toCharArray()) {
+            if (map.containsKey(c))
+                map.put(c, map.get(c)+1);
+            else
+                map.put(c, 1);
+        }
     }
 }
 
