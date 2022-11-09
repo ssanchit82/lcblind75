@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,7 +21,10 @@ public class Main {
 //        System.out.println(Arrays.toString(_3_TwoSum.twoSum(new int[] {2,7,11,15}, 9)));
 //        System.out.println(Arrays.toString(_3_TwoSum.twoSum(new int[] {3,2,4}, 6)));
 
-        List<List<String>> result = _4_GroupAnagrams.groupAnagrams(new String[] {"eat","tea","tan","ate","nat","bat"});
-        System.out.println(result);
+//        List<List<String>> result = _4_GroupAnagrams.groupAnagrams(new String[] {"eat","tea","tan","ate","nat","bat"});
+//        System.out.println(result);
+
+        int[] result = _5_TopKFrequentElements.topKFrequent(new int[] {1,1,1,1,2,2,3,3,3,4}, 4);
+        System.out.println(Arrays.toString(result));
     }
 }
