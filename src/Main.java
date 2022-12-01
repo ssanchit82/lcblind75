@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -36,9 +37,16 @@ public class Main {
 //        System.out.println(_7_LongestConsecutiveSequence.longestConsecutive(new int[] {100,4,200,1,3,2}));
 //        System.out.println(_7_LongestConsecutiveSequence.longestConsecutive(new int[] {0,3,7,2,5,8,4,6,0,1}));
 
-        System.out.println(_8_ValidPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
-        System.out.println(_8_ValidPalindrome.isPalindrome("race a car"));
-        System.out.println(_8_ValidPalindrome.isPalindrome(" "));
-        System.out.println(_8_ValidPalindrome.isPalindrome("!"));
+//        System.out.println(_8_ValidPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
+//        System.out.println(_8_ValidPalindrome.isPalindrome("race a car"));
+//        System.out.println(_8_ValidPalindrome.isPalindrome(" "));
+//        System.out.println(_8_ValidPalindrome.isPalindrome("!"));
+
+//        List<List<Integer>> result = _9_ThreeSum.threeSumV2(new int[] {-1,0,1,2,-1,4});
+//        List<List<Integer>> result = _9_ThreeSum.threeSumV2(new int[] {0,0,0});
+//        System.out.println(result);
+
+        System.out.println(Arrays.toString(_3_TwoSum.twoSumV2(new int[] {2,7,11,15}, 9)));
+        System.out.println(Arrays.toString(_3_TwoSum.twoSumV2(new int[] {3,2,4}, 6)));
     }
 }

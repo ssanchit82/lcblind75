@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,6 +13,27 @@ public class _3_TwoSum {
                 return new int[] {complementMap.get(nums[i]), i};
 
             complementMap.put(complement, i);
+        }
+
+        return null;
+    }
+
+    // two pointer solution - O(NlogN), O(1) space
+    public static int[] twoSumV2(int[] nums, int target) {
+        Arrays.sort(nums);
+        int left = 0;
+        int right = nums.length-1;
+
+        while (left < right) {
+            int leftRightSum = nums[left] + nums[right];
+
+            if (target == leftRightSum) {
+                return new int[] {nums[left], nums[right]};
+            }
+            else if (leftRightSum > target)
+                right--;
+            else
+                left++;
         }
 
         return null;
