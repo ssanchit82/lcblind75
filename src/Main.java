@@ -46,7 +46,13 @@ public class Main {
 //        List<List<Integer>> result = _9_ThreeSum.threeSumV2(new int[] {0,0,0});
 //        System.out.println(result);
 
-        System.out.println(Arrays.toString(_3_TwoSum.twoSumV2(new int[] {2,7,11,15}, 9)));
-        System.out.println(Arrays.toString(_3_TwoSum.twoSumV2(new int[] {3,2,4}, 6)));
+//        System.out.println(Arrays.toString(_3_TwoSum.twoSumV2(new int[] {2,7,11,15}, 9)));
+//        System.out.println(Arrays.toString(_3_TwoSum.twoSumV2(new int[] {3,2,4}, 6)));
+
+//        System.out.println(_10_ContainerMaxWater.maxArea(new int[] {1,8,6,2,5,4,8,3,7}));
+//        System.out.println(_10_ContainerMaxWater.maxArea(new int[] {1,1}));
+
+        System.out.println(_11_BuySellStock.maxProfit(new int[] {7,1,5,3,6,4}));
+        System.out.println(_11_BuySellStock.maxProfit(new int[] {7,6,4,3,1}));
     }
 }
