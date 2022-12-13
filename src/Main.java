@@ -52,7 +52,15 @@ public class Main {
 //        System.out.println(_10_ContainerMaxWater.maxArea(new int[] {1,8,6,2,5,4,8,3,7}));
 //        System.out.println(_10_ContainerMaxWater.maxArea(new int[] {1,1}));
 
-        System.out.println(_11_BuySellStock.maxProfit(new int[] {7,1,5,3,6,4}));
-        System.out.println(_11_BuySellStock.maxProfit(new int[] {7,6,4,3,1}));
+//        System.out.println(_11_BuySellStock.maxProfit(new int[] {7,1,5,3,6,4}));
+//        System.out.println(_11_BuySellStock.maxProfit(new int[] {7,6,4,3,1}));
+
+//        System.out.println(_12_LongestSubStringWithoutRepeating.lengthOfLongestSubstring("abcabcbb"));
+//        System.out.println(_12_LongestSubStringWithoutRepeating.lengthOfLongestSubstring("bbbbb"));
+//        System.out.println(_12_LongestSubStringWithoutRepeating.lengthOfLongestSubstring("pwwkew"));
+
+        //System.out.println(_13_LongestSubStringCharReplacement.characterReplacement("ABAB", 2));
+        //System.out.println(_13_LongestSubStringCharReplacement.characterReplacement("AABABBA", 1));
+        System.out.println(_13_LongestSubStringCharReplacement.characterReplacement("ABAA", 0));
     }
 }
